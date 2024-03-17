@@ -1,0 +1,96 @@
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Truculenta;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+input {
+    margin:5px;
+}
+
+.main-container {
+    border: 10px solid rgba(128, 128, 128, 0.402);
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 380px;
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 500px;
+    
+}
+button {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.row-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.column-div{
+    cursor: pointer;
+
+}
+.column-div:hover{
+    background-color: black;
+}
+
+.menu {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px rgba(128, 128, 128, 0.143) ridge;
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.143);
+}
+
+.menubuttons{
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    width: 200px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 30px;
+    border: 2px solid rgba(0, 0, 0, 0.368);
+}
+
+.menubuttons:active{
+    color: grey;
+}
+
+#grid-value {
+    width: 160px;
+}
+
+label {
+    font-size: large;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+footer {
+    text-align: center;
+    font-size: 18px;
+
+}
