@@ -5,20 +5,24 @@ let eraser_active = false;
 let rainbow = false;
 let black = true;
 createGrid();
+updateActiveButton();
 
 function setEraserTrue(){
+    updateActiveButton();
     eraser_active = true;
     black = false;
     rainbow = false;
 }
 
 function setBlackTrue(){
+    updateActiveButton();
     black = true;
     rainbow = false;
     eraser_active = false;
 }
 
 function setRainbowTrue(){
+    updateActiveButton();
     rainbow = true;
     eraser_active = false;
     black = false;
@@ -88,4 +92,18 @@ function updateValue(){
     const value = document.getElementById("curr");
     const size = document.querySelector("#grid-value").value;
     value.textContent = `Current Grid: ${size}x${size}`;
+}
+
+function updateActiveButton() {
+    let buttons = document.querySelectorAll(".menubuttons");
+    buttons.forEach((button) => {
+
+        button.addEventListener("click", function () {
+            let current = document.querySelector(".active");
+            if (current) {
+                current.classList.remove("active");
+            }
+            button.classList.add("active");
+        });
+    });
 }

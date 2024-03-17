@@ -62,7 +62,7 @@ button {
     background-color: rgba(128, 128, 128, 0.143);
 }
 
-.menubuttons{
+.menubuttons , #reset{
     justify-content: center;
     align-items: center;
     font-size: large;
@@ -71,10 +71,11 @@ button {
     margin: 5px;
     border-radius: 30px;
     border: 2px solid rgba(0, 0, 0, 0.368);
+    cursor: pointer;
 }
 
-.menubuttons:active{
-    color: grey;
+.menubuttons.active{
+    background-color: grey;
 }
 
 #grid-value {

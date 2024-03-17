@@ -15,10 +15,10 @@
     <div class="container">
         <div class = "menu">
             <h2>Menu</h2>
-            <button class = "menubuttons" onclick="setBlackTrue()">Black Mode</button><br>
+            <button class = "menubuttons active" onclick="setBlackTrue()">Black Mode</button><br>
             <button class = "menubuttons" onclick="setRainbowTrue()">Rainbow Mode</button><br>
             <button class = "menubuttons" onclick="setEraserTrue()">Eraser</button><br>
-            <button class = "menubuttons" onclick="resetGrid()">Reset</button><br>
+            <button id = "reset" onclick="resetGrid()">Reset</button><br>
             <label>Grid:</label>
             <input type = "range" id = "grid-value" min="16" max = "64" step = "2" oninput="createGrid()">
             <p id = "curr">Current Grid: 16x16</p>
