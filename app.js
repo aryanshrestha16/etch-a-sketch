@@ -1,6 +1,6 @@
 "use strict"
 const GRID_WIDTH = 500;
-const GRID_HEIGTH = 500;
+const GRID_HEIGHT = 500;
 let eraser_active = false;
 let rainbow = false;
 let black = true;
@@ -33,7 +33,7 @@ function createGrid() {
     const container = document.querySelector(".grid-container");
     const size = document.querySelector("#grid-value").value;
     let divWidth = GRID_WIDTH/size;
-    let divHeight = GRID_HEIGTH/size;
+    let divHeight = GRID_HEIGHT/size;
     for (let i = 1; i <= size; i++){
         const newdiv = document.createElement("div");
         newdiv.classList.add("row-container");
